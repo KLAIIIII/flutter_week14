@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'contact.dart';
 import 'home.dart';
+import 'list_view_builder.dart';
+import 'list_view_demo.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key); //1.constructor
@@ -8,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ContactPage(
+      home: ListViewBuilder(
 
       ),
     );
