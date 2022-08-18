@@ -38,7 +38,7 @@ class ListViewMenu extends StatelessWidget {
               ),
               trailing: Icon(Icons.arrow_right),
               onTap: (){
-                debugPrint("MENU-1");
+                debugPrint(menus[index].title);
               },
             );
           },
