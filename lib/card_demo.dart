@@ -4,14 +4,17 @@ class Menu {
   final String? title;
   final IconData? icon;
   final Color? bkColor;
+
   const Menu({this.title, this.bkColor, this.icon});
 }
 
 List<Menu> menus = [
-  const Menu(title: 'MENU-1', icon: Icons.person, bkColor: Colors.green),
-  const Menu(title: 'MENU-2', icon: Icons.person_add, bkColor: Colors.yellow),
+  const Menu(title: 'MENU-1', icon: Icons.person, bkColor: Colors.yellow),
+  const Menu(title: 'MENU-2', icon: Icons.person_add, bkColor: Colors.green),
   const Menu(title: 'MENU-3', icon: Icons.wifi, bkColor: Colors.blue),
-  const Menu(title: 'MENU-3', icon: Icons.add_a_photo, bkColor: Colors.brown),
+  const Menu(title: 'MENU-4', icon: Icons.add_a_photo, bkColor: Colors.red),
+  const Menu(title: 'MENU-5', icon: Icons.add_a_photo, bkColor: Colors.pinkAccent),
+  const Menu(title: 'MENU-6', icon: Icons.add_a_photo, bkColor: Colors.teal),
 ];
 
 class CardDemo extends StatelessWidget {
@@ -24,27 +27,29 @@ class CardDemo extends StatelessWidget {
         title: Text("Card Demo"),
       ),
       body: Container(
-        padding: EdgeInsets.all(8),
+        padding: EdgeInsets.all(5),
         child: GridView.count(
-        crossAxisCount: (menus.length),
-        children: List.generate(menus.length, (index) {
-          return Card(
-            margin: EdgeInsets.all(12),
-            child: InkWell(
-              onTap: () {},
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(menus[index].icon, size: 40, color: menus[index].bkColor),
-                  Text(menus[index].title!, style: TextStyle(fontSize: 15, color: Colors.black),
-                  )
-                ],
+          crossAxisCount: 2,
+          children: List.generate(menus.length, (index) {
+            return Card(
+              color: menus[index].bkColor,
+              margin: EdgeInsets.all(8),
+              child: InkWell(
+                onTap: () {},
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(menus[index].icon, size: 40, color: Colors.white),
+                      Text(menus[index].title!, style: TextStyle(fontSize: 15, color: Colors.white))
+                    ],
+                  ),
+                ),
               ),
-            ),
-          );
-        }),
+            );
+          }),
+        ),
       ),
-    ),
     );
   }
 }

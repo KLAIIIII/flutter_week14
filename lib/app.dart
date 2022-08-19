@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'card_demo.dart';
 import 'contact.dart';
 import 'home.dart';
+import 'list_tile_view.dart';
 import 'list_view_builder.dart';
 import 'list_view_demo.dart';
 import 'list_view_menu.dart';
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: CardDemo(
+      home: ListTilePage(
 
       ),
     );
