@@ -1,5 +1,19 @@
 import 'package:flutter/material.dart';
 
+class Menu {
+  final String title;
+  final IconData? icon;
+  final Color bkColor;
+
+  Menu({required this.title, required this.icon, required this.bkColor});
+}
+
+List<Menu> menu = [
+  Menu(title: "MENU-1", icon: Icons.person, bkColor: Colors.blue),
+  Menu(title: "MENU-1",icon: Icons.abc_rounded, bkColor: Colors.lightGreen),
+  Menu(title: "MENU-1",icon: Icons.add_a_photo, bkColor: Colors.amber),
+];
+
 class GridViewCardPage extends StatelessWidget {
   const GridViewCardPage({Key? key}) : super(key: key);
 
@@ -12,34 +26,28 @@ class GridViewCardPage extends StatelessWidget {
       body: Container(
         padding: EdgeInsets.all(8.0),
         child: GridView.count(
-          crossAxisCount: 3,
-          mainAxisSpacing: 20,
-          crossAxisSpacing: 20,
-          children: List.generate(6, (index) {
-            return Card(
-              color: Colors.blue[200],
-              elevation: 10,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(200)
-                )
-              ),
-              child: InkWell(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(200)
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.person,size: 65,color: Colors.yellow[300]),
-                    Text("Menu-1",style: TextStyle(color: Colors.yellow[300])),
+            crossAxisCount: menu.length,
+            mainAxisSpacing: 20,
+            crossAxisSpacing: 20,
+            children: List.generate(menu.length, (index) {
+              return Card(
+                color: menu[index].bkColor,
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(200))),
+                child: InkWell(
+                  borderRadius: BorderRadius.all(Radius.circular(200)),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(menu[index].icon, size: 65, color: Colors.white),
+                      Text(menu[index].title, style: TextStyle(color: Colors.white)),
                     ],
+                  ),
+                  onTap: () {},
                 ),
-                onTap: (){},
-              ),
-            );
-          })
-        ),
+              );
+            })),
       ),
     );
   }
