@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'card_demo.dart';
 import 'contact.dart';
+import 'grid_view_card_page.dart';
+import 'grid_view_page.dart';
 import 'home.dart';
 import 'list_tile_view.dart';
 import 'list_view_builder.dart';
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ListTilePage(
+      home: GridViewCardPage(
 
       ),
     );
