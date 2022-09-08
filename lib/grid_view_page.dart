@@ -7,7 +7,7 @@ class GridViewPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Grid View"),
+        title: Text("Grid view"),
       ),
       body: Container(
         padding: EdgeInsets.all(8.0),
@@ -17,29 +17,29 @@ class GridViewPage extends StatelessWidget {
           crossAxisSpacing: 20,
           children: [
             Container(
-              color: Colors.green[300],
+              color: Colors.green[200],
               padding: EdgeInsets.all(8),
-              child: Text("0-1"),
+              child: Text("G-1"),
             ),
             Container(
-              color: Colors.green[300],
+              color: Colors.green[200],
               padding: EdgeInsets.all(8),
-              child: Text("0-1"),
+              child: Text("G-2"),
             ),
             Container(
-              color: Colors.green[300],
+              color: Colors.green[200],
               padding: EdgeInsets.all(8),
-              child: Text("0-1"),
+              child: Text("G-3"),
             ),
             Container(
-              color: Colors.green[300],
+              color: Colors.green[200],
               padding: EdgeInsets.all(8),
-              child: Text("0-1"),
+              child: Text("G-4"),
             ),
             Container(
-              color: Colors.green[300],
+              color: Colors.green[200],
               padding: EdgeInsets.all(8),
-              child: Text("0-1"),
+              child: Text("G-5"),
             ),
           ],
         ),
