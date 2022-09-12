@@ -9,11 +9,11 @@ class Menu {
 }
 
 List<Menu> menus = [
-  const Menu(title: 'MENU-1', icon: Icons.person, bkColor: Colors.yellow),
-  const Menu(title: 'MENU-2', icon: Icons.person_add, bkColor: Colors.green),
+  const Menu(title: 'MENU-1', icon: Icons.person, bkColor: Colors.pinkAccent),
+  const Menu(title: 'MENU-2', icon: Icons.person_add, bkColor: Colors.amberAccent),
   const Menu(title: 'MENU-3', icon: Icons.wifi, bkColor: Colors.blue),
-  const Menu(title: 'MENU-4', icon: Icons.add_a_photo, bkColor: Colors.red),
-  const Menu(title: 'MENU-5', icon: Icons.add_a_photo, bkColor: Colors.pinkAccent),
+  const Menu(title: 'MENU-4', icon: Icons.add_a_photo, bkColor: Colors.lightGreen),
+  const Menu(title: 'MENU-5', icon: Icons.add_a_photo, bkColor: Colors.brown),
   const Menu(title: 'MENU-6', icon: Icons.add_a_photo, bkColor: Colors.teal),
 ];
 

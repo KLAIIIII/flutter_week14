@@ -9,8 +9,8 @@ class Menu {
 }
 
 List<Menu> menu = [
-  Menu(title: "MENU-1", icon: Icons.person, bkColor: Colors.blue),
-  Menu(title: "MENU-1",icon: Icons.abc_rounded, bkColor: Colors.lightGreen),
+  Menu(title: "MENU-1", icon: Icons.person, bkColor: Colors.pinkAccent),
+  Menu(title: "MENU-1",icon: Icons.abc_rounded, bkColor: Colors.brown),
   Menu(title: "MENU-1",icon: Icons.add_a_photo, bkColor: Colors.amber),
 ];
 
@@ -21,6 +21,7 @@ class GridViewCardPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue[200],
         title: Text("Card Menu"),
       ),
       body: Container(

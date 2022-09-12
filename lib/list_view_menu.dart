@@ -22,6 +22,7 @@ class ListViewMenuPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue[200],
         title: const Text('List View Menu'),
       ),
       body: Container(

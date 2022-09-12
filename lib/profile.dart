@@ -12,6 +12,9 @@ class Profile extends StatelessWidget {
       ),
       body: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
             children: [
               Text("นายสตีฟ จอบส์"),
               Text("ศึกษาจบจากวิทยาลัยรีด"),

@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class ContactPage extends StatelessWidget {
@@ -7,6 +9,7 @@ class ContactPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.blue[200],
         title: Text("MyApp"),
       ),
       body: Center(
@@ -15,10 +18,11 @@ class ContactPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text("ติดต่อเรา: Mr.Steve Jobs"),
+            Text("ติดต่อเรา: Ms.Wilai"),
             Text("เบอร์โทร: 0999199911"),
-            Text("steve@gmail.com"),
+            Text("wilai@gmail.com"),
           ],
+
         ),
       ),
     );

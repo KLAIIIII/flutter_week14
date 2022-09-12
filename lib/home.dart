@@ -19,6 +19,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Home page"),
+        backgroundColor: Colors.blue[200],
         actions: [
           IconButton(
             onPressed: () {
@@ -50,8 +51,8 @@ class _HomePageState extends State<HomePage> {
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
-              accountName: Text("Mark"),
-              accountEmail: Text("mark@gmail.com"),
+              accountName: Text("Wilai"),
+              accountEmail: Text("wilai@gmail.com"),
               currentAccountPicture: CircleAvatar(
                 child: Icon(Icons.android),
               ),
@@ -78,14 +79,14 @@ class _HomePageState extends State<HomePage> {
               },
             ),
             ListTile(
-              leading: Icon(Icons.api),
+              leading: Icon(Icons.contact_mail),
               title: Text('ติดต่อเรา'),
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => ContactPage()));
               },
             ),
             ListTile(
-              leading: Icon(Icons.api),
+              leading: Icon(Icons.account_box),
               title: Text('ประวัติวส่นตัว'),
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
